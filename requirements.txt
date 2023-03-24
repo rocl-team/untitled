@@ -1,0 +1,7 @@
+flask
+logzero
+numpy
+rq
+slack_sdk
+pandas
+psycopg2-binary
