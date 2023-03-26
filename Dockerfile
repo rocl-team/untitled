@@ -1,7 +1,7 @@
 FROM python:3.11.1-slim
 
 WORKDIR /usr/src/app
-COPY requirements.txt run.sh worker_mon.py ./
+COPY requirements.txt run.sh worker.py ./
 COPY api ./api
 COPY config ./config
 
