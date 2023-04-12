@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def landing():
-    return "Have a nice day! (1)", 200
+    return "Have a nice day! (2)", 200
 
 @app.route('/lb-poke', methods=['GET'])
 def lbPoke():
