@@ -11,10 +11,7 @@ on:
     branches:
       - main
     paths:
-      - 'api/**'
-      - 'config/**'
-      - 'worker.py'
-      - 'Dockerfile'
+      - 'osom/**'
       - '.github/workflows/**'
       - '.do/workflows/**'
 
