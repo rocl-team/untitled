@@ -17,7 +17,7 @@ framework/tests-results
 #framework/src/play/version
 #framework/src/play/version
 framework/tests/test-application/db
-framework/play-*.jar
+#framework/play-*.jar
 framework/docs
 samples-and-tests/*/test-result/
 
@@ -43,7 +43,7 @@ resources/nbproject/private
 modules/gae/lib/gae.jar
 catalog.xml
 modules/gae/lib/gae.jar
-play-*.jar
+#play-*.jar
 modules/gae/bin
 modules/gwt/lib/play-gwt.jar
 tmp
