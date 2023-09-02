@@ -72,8 +72,8 @@ RUN echo Verifying install ... \
     && echo java -version && java -version \
     && echo "Install has completed ."
 
-RUN mkdir /opt/play
-COPY ./play/ /opt/play
+WORKDIR /opt
+COPY play/ ./play
 
 WORKDIR /opt/untitled
 COPY osom ./osom
