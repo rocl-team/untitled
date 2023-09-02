@@ -11,8 +11,8 @@ spec:
       app: untitled
   strategy:
     rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 1
+      maxSurge: 2
+      maxUnavailable: 5
   minReadySeconds: 5
   template:
     metadata:
