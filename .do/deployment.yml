@@ -23,7 +23,7 @@ spec:
       - name: untitled
         image: <IMAGE>
         ports:
-        - containerPort: 5000
+        - containerPort: 9000
         resources:
           requests:
             cpu: 100m
@@ -40,6 +40,6 @@ spec:
     - name: http
       protocol: TCP
       port: 80
-      targetPort: 5000
+      targetPort: 9000
   selector:
     app: untitled
