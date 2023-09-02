@@ -17,12 +17,12 @@
 # limitations under the License.
 #
 
-FROM ubuntu:22.04
+FROM ubuntu:14.04
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends python tzdata curl ca-certificates fontconfig locales \
     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
     && locale-gen en_US.UTF-8 \
     && rm -rf /var/lib/apt/lists/*
@@ -70,4 +70,13 @@ ENV JAVA_HOME=/opt/java/openjdk \
 RUN echo Verifying install ... \
     && echo javac -version && javac -version \
     && echo java -version && java -version \
-    && echo Complete.
+    && echo "Install has completed ."
+
+RUN mkdir /opt/play
+COPY ./play/ /opt/play
+
+WORKDIR /opt/untitled
+COPY osom ./osom
+COPY launch.sh ./
+EXPOSE 9000
+ENTRYPOINT ["/opt/untitled/launch.sh"]
