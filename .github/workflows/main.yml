@@ -12,6 +12,7 @@ on:
       - main
     paths:
       - 'osom/**'
+      - 'play/**'
       - '.github/workflows/**'
       - '.do/workflows/**'
 
