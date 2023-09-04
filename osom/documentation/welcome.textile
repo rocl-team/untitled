@@ -11,3 +11,5 @@ You can customize the way it looks by editing @template.html@ file, but it's not
 h2. Export documentation to htmls
 
 If you want to export your documentation just execute @play doc:export@ command in project root. This will generate zip file in @documentation@ folder with all your textile files rendered to html and files from @images@ and @files@ included.
+
+TODO
