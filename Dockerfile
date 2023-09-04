@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-FROM ubuntu:14.04
+FROM debian:jessie-slim
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
