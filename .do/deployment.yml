@@ -31,13 +31,40 @@ spec:
             cpu: 100m
         env:
         # Define the environment variable
-          - name: FOO_ENV_VAR
+          - name: APPLICATION_MODE
             valueFrom:
               configMapKeyRef:
                 # The ConfigMap containing the value you want to assign to SPECIAL_LEVEL_KEY
-                name: config-vault
+                name: cm-untitled-environments
                 # Specify the key associated with the value
-                key: foobar
+                key: application_mode
+          - name: APPLICATION_SECRET
+            valueFrom:
+              configMapKeyRef:
+                # The ConfigMap containing the value you want to assign to SPECIAL_LEVEL_KEY
+                name: cm-untitled-environments
+                # Specify the key associated with the value
+                key: application_secret
+          - name: JDBC_URL
+            valueFrom:
+              configMapKeyRef:
+                # The ConfigMap containing the value you want to assign to SPECIAL_LEVEL_KEY
+                name: cm-untitled-environments
+                # Specify the key associated with the value
+                key: jdbc_url
+          - name: JDBC_USER
+              configMapKeyRef:
+                # The ConfigMap containing the value you want to assign to SPECIAL_LEVEL_KEY
+                name: cm-untitled-environments
+                # Specify the key associated with the value
+                key: jdbc_user
+          - name: JDBC_PASS
+              configMapKeyRef:
+                # The ConfigMap containing the value you want to assign to SPECIAL_LEVEL_KEY
+                name: cm-untitled-environments
+                # Specify the key associated with the value
+                key: jdbc_pass
+---
 ---
 apiVersion: v1
 kind: Service
