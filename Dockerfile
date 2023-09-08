@@ -18,10 +18,7 @@
 #
 
 #FROM ubuntu:14.04
-
-ARG REPO_LOCATION=registry.digitalocean.com/rocl-wharf/
-ARG BASE_VERSION=ed3df72
-FROM ${REPO_LOCATION}untitled:${BASE_VERSION}
+FROM registry.digitalocean.com/rocl-wharf/untitled:ed3df72
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
