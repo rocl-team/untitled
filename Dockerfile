@@ -17,8 +17,8 @@
 # limitations under the License.
 #
 
-#FROM ubuntu:14.04
-FROM registry.digitalocean.com/rocl-wharf/untitled:ed3df72
+FROM ubuntu:14.04
+#FROM registry.digitalocean.com/rocl-wharf/untitled:ed3df72
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
